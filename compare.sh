@@ -1,0 +1,13 @@
+echo Compiling...
+cd clj; ./compile.sh; cd ..
+cd clj-log4j; ./compile.sh; cd ..
+cd java; ./compile.sh; cd ..
+
+echo Running Java...
+cd java; ./run.sh; cd ..
+
+echo Running Clojure Log4J...
+cd clj-log4j; ./run.sh; cd ..
+
+echo Running Clojure contrib logging...
+cd clj; ./run.sh; cd ..
